@@ -30,7 +30,7 @@ class TestLogin:
         # 3. Verification: check the popup message
         with allure.step("Sign up was successful"):
             success_msg = lp.get_success_message()
-            assert success_msg == "Signedd Up!", f"Expected 'Signed Up!' but got '{success_msg}'"
+            assert success_msg == "Signed Up!", f"Expected 'Signed Up!' but got '{success_msg}'"
 
         # 4. Close pop up
         with allure.step("Close pop up"):
